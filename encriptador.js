@@ -14,6 +14,11 @@ const llaves = [
     ['u', 'ufat'],
 ];
 
+// Función para validar el texto
+function validarTexto(texto) {
+    return texto.replace(/[^a-z\s]/g, '');
+}
+
 console.log("El script se está ejecutando");
 
 function encriptarMensaje(mensaje) {
